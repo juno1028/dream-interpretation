@@ -10,16 +10,15 @@
   pointer-events: none;
 }
 
-.homepage {
+.homepage-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
   position: relative;
   padding-bottom: 15%;
   width: 100%;
   height: 100vh;
-  background-image: url("/Users/junokim/Desktop/side_project/231220_dream_interpretation/240324_source_code/dream-interpretation/src/assets/home-page.svg");
+  background-image: url("/Users/junokim/Desktop/side_project/231220_dream_interpretation/240324_source_code/dream-interpretation/src/assets/homepage-bg.svg");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -28,7 +27,7 @@
 .start-button {
   position: absolute;
   width: 100%;
-  height: 72px;
+  height: 4.2rem;
   bottom: 17%;
   background-image: url("/Users/junokim/Desktop/side_project/231220_dream_interpretation/240324_source_code/dream-interpretation/src/assets/start-button.svg");
   background-size: contain;
@@ -43,6 +42,84 @@
 
 .start-button:hover {
   opacity: 0.8;
+}
+
+.inputpage-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-image: url("/Users/junokim/Desktop/side_project/231220_dream_interpretation/240324_source_code/dream-interpretation/src/assets/inputpage-bg.svg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.user-information-container {
+  flex: 0.7;
+  /* background-color: lightblue; */
+}
+
+.title-container {
+  flex: 0.7;
+  /* background-color: transparent; */
+}
+
+.subtitle-container {
+  flex: 0.7;
+  /* background-color: lightcyan; */
+}
+
+.user-input-container {
+  flex: 4;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  /* background-color: lightgreen; */
+  justify-content: center;
+  align-items: center;
+  padding: 6% 6% 6% 6%;
+}
+
+.user-textarea {
+  background-image: linear-gradient(to bottom, #604e78, #323e75);
+  width: 100%;
+  box-sizing: border-box; /* 패딩과 테두리가 너비에 포함되도록 설정 */
+  height: 100%;
+  border-radius: 25px;
+  border: 1px solid #eeeeee;
+  padding: 16px;
+  font-size: 1.1rem;
+  color: #ffffff;
+  resize: none;
+}
+
+textarea::placeholder {
+  color: #cccccc;
+  text-align: center;
+}
+
+.analyze-button-container {
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 2%;
+  padding-bottom: 6%;
+}
+
+.analyze-button {
+  width: 100%;
+  height: 100%;
+  background-image: url("/Users/junokim/Desktop/side_project/231220_dream_interpretation/240324_source_code/dream-interpretation/src/assets/analyze-button.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
